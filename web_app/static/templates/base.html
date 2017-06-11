@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<!--[if IE 9]>
+<html class="lt-ie10" lang="en" >
+<![endif]-->
+<html class="no-js" lang="en" >
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>{{ title }}</title>
+
+
+	<link rel="stylesheet" href="{% static 'css/foundation.css' %}">
+	<link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+	<script src="{% static 'js/jquery.js' %}"></script>
+	<script src="{% static 'js/foundation.js' %}"></script>
+	<script src="{% static 'js/util.js' %}"></script>
+	<script src="{% static 'js/init.js' %}"></script>
+	<script src="{% static 'js/perlin.js' %}"></script>
+	<script src="{% static 'js/map.js' %}"></script>
+	<script src="{% static 'js/blob.js' %}"></script>
+	<script src="{% static 'js/main.js' %}"></script>
+</head>
+<body>
+<canvas id="canvas"></canvas>
+</body>
+</html>
